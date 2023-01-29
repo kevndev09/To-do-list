@@ -117,7 +117,7 @@ label.addEventListener('click', () => {
         if(nuevaLista.className === 'cumplidos d-none'){
             nuevaLista.className = 'cumplidos d-block'
                 console.log('Lista mostrada');
-            } 
+            }
 
         if(ocultarCumplidos.className === 'ocultarCumplidos d-none'){
             ocultarCumplidos.className = 'ocultarCumplidos d-block'
@@ -125,6 +125,10 @@ label.addEventListener('click', () => {
         function ocultarCumplidoss(){
             if (nuevaLista.className === 'cumplidos d-block'){
                 nuevaLista.className = 'cumplidos d-none'
+                console.log('Lista ocultada');
+            } 
+             if (ARTICLE.className === 'cumplidos d-block'){
+                ARTICLE.className = 'cumplidos d-none'
                 console.log('Lista ocultada');
             } 
         }
@@ -138,18 +142,14 @@ label.addEventListener('click', () => {
 
 verCumplidos.addEventListener('click',mostrarCumplidos)
 
-
     ponTuNota.addEventListener('click', () => {
 
-        console.log('nota añadida');
-        
         nuevoModal.appendChild(pregunta)
         nuevoModal.appendChild(divTextArea)
         divTextArea.appendChild(nuevoTextArea)
         nuevoModal.appendChild(divEvaluarNota)
         divEvaluarNota.appendChild(cancelarNuevaNota)
         divEvaluarNota.appendChild(aceptarNuevaNota)
-            console.log(nuevoModal);
             nuevoModal.classList.replace('d-none','d-block')
         divModal.appendChild(nuevoModal)
         
