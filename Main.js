@@ -237,8 +237,8 @@ verCumplidos.addEventListener('click',function(){
         }
 
         function ocultarCumplido(){
-            if (nuevaLista.className === 'cumplidos d-block'){
-                nuevaLista.className = 'cumplidos d-none'
+            if (ARTICLE.className === 'd-block'){
+                ARTICLE.className = 'd-none'
             } 
         }
         ocultarCumplidos.addEventListener('click',ocultarCumplido)
