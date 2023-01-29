@@ -230,15 +230,11 @@ cancelarNota.addEventListener('click', () => {
 verCumplidos.addEventListener('click',function(){
     if(ARTICLE.className === 'cumplidos d-none'){
             ARTICLE.className = 'cumplidos d-block'
-            } 
-
-        if(ocultarCumplidos.className === 'ocultarCumplidos d-none'){
-            ocultarCumplidos.className = 'ocultarCumplidos d-block'
-        }
+            }
 
         function ocultarCumplido(){
-            if (ARTICLE.className === 'd-block'){
-                ARTICLE.className = 'd-none'
+            if (ARTICLE.className === 'cumplidos d-block'){
+                ARTICLE.className = 'cumplidos d-none'
             } 
         }
         ocultarCumplidos.addEventListener('click',ocultarCumplido)
