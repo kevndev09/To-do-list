@@ -16,7 +16,7 @@
     transition: all 0.30s;
 }
 
-body {height: 100vh; background-color: rgb(246, 246, 214);}
+body {height: 100vh; background-color: wheat;}
 
 h3,h2 {color: var(--azulito);}
 
