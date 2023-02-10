@@ -52,7 +52,7 @@ label {
     border: none;
     caret-color: var(--azulito2);
     color: var(--azulito2);
-    background-color: rgb(246, 246, 214);
+    background-color: white;
  }
 
 .input:focus { outline: none;}
